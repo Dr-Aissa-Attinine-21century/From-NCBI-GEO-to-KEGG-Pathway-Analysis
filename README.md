@@ -163,40 +163,6 @@ bufalin-dox-cardiotoxicity-pipeline/
 
 > **Note:** The `data/` directory is excluded from version control (add to `.gitignore`). Raw GEO data is downloaded automatically by `01_download_and_qc.R`.
 
----
-
-## How to Run
-
-### Option A — Script by script
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/yourusername/bufalin-dox-cardiotoxicity-pipeline.git
-cd bufalin-dox-cardiotoxicity-pipeline
-
-# 2. Open in RStudio and run scripts in order
-```
-
-```r
-source("scripts/00_install_packages.R")   # First time only
-source("scripts/01_download_and_qc.R")
-source("scripts/02_differential_expression.R")
-source("scripts/03_kegg_analysis.R")
-source("scripts/04_bufalin_mechanism.R")
-```
-
-### Option B — Full R Markdown report
-
-```r
-rmarkdown::render("reports/Cardiotoxicity_Bufalin_Report.Rmd",
-                  output_format = "html_document",
-                  output_file   = "results/Cardiotoxicity_Bufalin_Report.html")
-```
-
-This generates a single self-contained HTML report with all figures, tables, and interpretation.
-
----
-
 ## Analysis Steps
 
 ### 1. Data Download & Quality Control (`01_download_and_qc.R`)
