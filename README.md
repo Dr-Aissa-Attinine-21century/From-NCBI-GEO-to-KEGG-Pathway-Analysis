@@ -12,7 +12,6 @@
 - [Pipeline Architecture](#pipeline-architecture)
 - [Prerequisites](#prerequisites)
 - [Repository Structure](#repository-structure)
-- [How to Run](#how-to-run)
 - [Analysis Steps](#analysis-steps)
 - [Key Results & Interpretation](#key-results--interpretation)
 - [Adapting This Pipeline](#adapting-this-pipeline)
